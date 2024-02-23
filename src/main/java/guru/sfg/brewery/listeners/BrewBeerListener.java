@@ -5,13 +5,12 @@ import guru.sfg.brewery.domain.BeerInventory;
 import guru.sfg.brewery.events.BrewBeerEvent;
 import guru.sfg.brewery.events.NewInventoryEvent;
 import guru.sfg.brewery.repositories.BeerRepository;
+import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.event.EventListener;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
-
-import javax.transaction.Transactional;
 
 @Slf4j
 @Component

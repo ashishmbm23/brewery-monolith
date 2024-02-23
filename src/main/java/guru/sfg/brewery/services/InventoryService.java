@@ -3,12 +3,12 @@ package guru.sfg.brewery.services;
 import guru.sfg.brewery.domain.Beer;
 import guru.sfg.brewery.events.BrewBeerEvent;
 import guru.sfg.brewery.repositories.BeerRepository;
+import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
